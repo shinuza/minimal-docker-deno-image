@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "build-docker": "docker build -t deno-standalone:latest ."
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@^17.1.2",
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
