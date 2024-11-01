@@ -1,21 +1,14 @@
-# Deno Project
+## Project Purpose
 
-Welcome to the Deno Project! This README will guide you through the setup and usage of the project.
+This project is a proof of concept to show how to build a minimal size image using `deno compile`. The goal is to demonstrate the capabilities of Deno in creating efficient and compact executables.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
-
-This project is built using [Deno](https://deno.land/), a modern runtime for JavaScript and TypeScript.
-## Project Purpose
-
-This project is a proof of concept to show how to build a minimal size image using `deno compile`. The goal is to demonstrate the capabilities of Deno in creating efficient and compact executables.
 
 ## Installation
 
@@ -26,10 +19,14 @@ To get started, ensure you have Deno installed. You can install Deno by followin
 To run the project, use the following command:
 
 ```sh
-deno run --allow-net --allow-read main.ts
+deno task dev
 ```
 
-Replace `main.ts` with the entry point of your application.
+To build the docker image
+
+```sh
+deno task build-docker
+```
 
 ## Contributing
 
